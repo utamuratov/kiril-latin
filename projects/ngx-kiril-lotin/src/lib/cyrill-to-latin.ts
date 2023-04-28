@@ -1,3 +1,5 @@
+// code by Uroljon Khidirboev (https://github.com/Uroljon)
+
 const alpha = [
   //kirill-lotin uchun lotin alfaviti
   'A',
