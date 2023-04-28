@@ -1,24 +1,37 @@
-# NgxKirilLotin
+# ngx-kiril-lotin
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+Ushbu kutubxona O'zbek tilidagi matnni kiril dan lotinga yoki lotindan kirilga o'girib beradi. [Angular CLI](https://github.com/angular/angular-cli) 15.2.0 versiyasida yaratilgan.
+[DEMO](https://stackblitz.com/edit/angular-pnxs4z?file=src%2Fmain.ts)
 
-## Code scaffolding
+# O'rnatish
 
-Run `ng generate component component-name --project ngx-kiril-lotin` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-kiril-lotin`.
-> Note: Don't forget to add `--project ngx-kiril-lotin` or else it will be added to the default project in your `angular.json` file. 
+Quyidagi kamanda bilan o'rnatiladi:
 
-## Build
+```bash
+npm i ngx-kiril-lotin
+```
 
-Run `ng build ngx-kiril-lotin` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Foydalanish uchun
 
-## Publishing
+Foydalanmoqchi bo'lgan module yoki standalone komponentalarga import qilish kerak bo'ladi:
 
-After building your library with `ng build ngx-kiril-lotin`, go to the dist folder `cd dist/ngx-kiril-lotin` and run `npm publish`.
+```
+import { NgxKirilLotinPipe } from 'ngx-kiril-lotin';
 
-## Running unit tests
+@NgModule({
+  declarations: [YourComponent],
+  imports: [NgxKirilLotinPipe],
+})
+export class YourModule {}
+```
 
-Run `ng test ngx-kiril-lotin` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Foydalanish
 
-## Further help
+`HTML` template:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+{{ 'Biror matn' | ngxKirilLotin }}
+{{ 'Бирор матн' | ngxKirilLotin: 'kirilToLotin' }}
+```
+
+\*\*\* Ushbu pipe default lotindan kirilga o'tkazadi. TEskarisini qilish uchun esa tipiga `kirilToLotin` ni o'rnatish kerak.
