@@ -10,8 +10,8 @@ type ConvertType = 'kirilToLotin' | 'lotinToKiril';
 export class NgxKirilLotinPipe implements PipeTransform {
   transform(text: string, type: ConvertType = 'lotinToKiril'): string {
     if (type === 'lotinToKiril') {
-      return CyrillToLatin.kirillga(text);
+      return CyrillToLatin.toCyrillic(text);
     }
-    return CyrillToLatin.lotinga(text);
+    return CyrillToLatin.toLatin(text);
   }
 }
