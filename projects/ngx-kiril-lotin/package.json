@@ -1,6 +1,6 @@
 {
   "name": "ngx-kiril-lotin",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Matnni kirildan lotinga yoki lotindan kirilga o'giradi",
   "author": {
     "name": "Odilbek Utamuratov",
@@ -18,6 +18,8 @@
   "homepage": "https://stackblitz.com/edit/angular-pnxs4z?file=src%2Fmain.ts",
   "keywords": [
     "angular",
+    "angular 15",
+    "angular 16",
     "kiril-lotin",
     "lotin-kiril",
     "kiril",
@@ -25,8 +27,8 @@
     "uz"
   ],
   "peerDependencies": {
-    "@angular/common": "^15.2.0",
-    "@angular/core": "^15.2.0"
+    "@angular/common": ">=15.0.0",
+    "@angular/core": ">=15.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"

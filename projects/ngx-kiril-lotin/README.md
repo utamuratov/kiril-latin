@@ -1,6 +1,5 @@
 # ngx-kiril-lotin
 
-Ushbu kutubxona O'zbek tilidagi matnni kiril dan lotinga yoki lotindan kirilga o'girib beradi. [Angular CLI](https://github.com/angular/angular-cli) 15.2.0 versiyasida yaratilgan.
 [DEMO](https://stackblitz.com/edit/angular-pnxs4z?file=src%2Fmain.ts)
 
 # O'rnatish
