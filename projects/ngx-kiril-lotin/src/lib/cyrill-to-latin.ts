@@ -231,6 +231,11 @@ const CYRILLIC_LETTERS = [
 export class CyrillToLatin {
   static toCyrillic(latinText: string) {
     function replaceSpecialLetters() {
+      latinText = latinText.replace(/g\'/g, 'ғ');
+      latinText = latinText.replace(/G\'/g, 'Ғ');
+      latinText = latinText.replace(/O\'/g, 'Ў');
+      latinText = latinText.replace(/o\'/g, 'ў');
+
       latinText = latinText.replace(/Ye/g, 'Е');
       latinText = latinText.replace(/YE/g, 'Е');
       latinText = latinText.replace(/Yo/g, 'Ё');
@@ -246,9 +251,6 @@ export class CyrillToLatin {
       latinText = latinText.replace(/Ts/g, 'Ц');
       latinText = latinText.replace(/TS/g, 'Ц');
 
-      latinText = latinText.replace(/G\'/g, 'Ғ');
-      latinText = latinText.replace(/O\'/g, 'Ў');
-
       latinText = latinText.replace(/ye/g, 'е');
       latinText = latinText.replace(/yo/g, 'ё');
       latinText = latinText.replace(/ch/g, 'ч');
@@ -256,8 +258,6 @@ export class CyrillToLatin {
       latinText = latinText.replace(/yu/g, 'ю');
       latinText = latinText.replace(/ya/g, 'я');
       latinText = latinText.replace(/ts/g, 'ц');
-      latinText = latinText.replace(/g\'/g, 'ғ');
-      latinText = latinText.replace(/o\'/g, 'ў');
     }
 
     function replaceQuotes() {
