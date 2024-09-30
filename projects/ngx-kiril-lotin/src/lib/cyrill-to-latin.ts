@@ -269,6 +269,7 @@ export class CyrillToLatin {
       latinText = latinText.replace(/ˊ/g, "'");
       latinText = latinText.replace(/ˋ/g, "'");
       latinText = latinText.replace(/‘/g, "'");
+      latinText = latinText.replace(/’/g, "'");
     }
 
     function treatSpecialLetters(currentWord: string) {
